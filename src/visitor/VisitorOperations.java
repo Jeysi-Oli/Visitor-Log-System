@@ -1,12 +1,11 @@
-package src;
+package visitor;
 
 /**
- * INTERFACE: src.VisitorOperations
+ * INTERFACE: VisitorOperations
  * OOP PRINCIPLE: Abstraction (Interface)
  * DESCRIPTION: Defines the "Contract" or list of mandatory methods
- * that the src.VisitorSystem must implement.
+ * that the VisitorSystem must implement.
  */
-
 public interface VisitorOperations {
 
     void addVisitor();

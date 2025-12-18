@@ -1,14 +1,13 @@
-package src;
+package visitor;
 
 import java.util.Scanner;
 
 /**
- * CLASS: src.Main
+ * CLASS: Main
  * ROLE: Entry Point & User Interface
- * OOP PRINCIPLE: Inheritance (Extends src.VisitorSystem)
- * DESCRIPTION: Handles the Guard Login and displays the src.Main Menu.
+ * OOP PRINCIPLE: Inheritance (Extends VisitorSystem)
+ * DESCRIPTION: Handles the Guard Login and displays the Main Menu.
  */
-
 public class Main extends VisitorSystem {
 
     public static void main(String[] args) {
@@ -20,12 +19,11 @@ public class Main extends VisitorSystem {
     /**
      * METHOD: guardLogin
      * DESCRIPTION: Simple authentication to secure the system.
-     * Hardcoded credentials: security / 12345
+     * Hardcoded credentials: security / security12345
      */
-
     public void guardLogin() {
         final String USERNAME = "security";
-        final String PASSWORD = "12345";
+        final String PASSWORD = "security12345";
 
         // MAIN HEADER: Professional "Security Terminal" Header.
         displayMessage("\n#########################################################");
@@ -59,15 +57,14 @@ public class Main extends VisitorSystem {
      * DESCRIPTION: Displays options and handles user input safely.
      * USES: try-catch block to prevent crashing on invalid inputs.
      */
-
     public void mainMenu() {
         while (true) {
             displayMessage("\n=== BSU VISITOR LOG MENU ===\n");
-            displayMessage("1 - Add src.Visitor Entry");
-            displayMessage("2 - Log src.Visitor Exit (Update Time-Out by Card)");
-            displayMessage("3 - View All src.Visitor Records");
-            displayMessage("4 - Search src.Visitor (Card/Name/Time-In)");
-            displayMessage("5 - Delete src.Visitor Record");
+            displayMessage("1 - Add Visitor Entry");
+            displayMessage("2 - Log Visitor Exit (Update Time-Out by Card)");
+            displayMessage("3 - View All Visitor Records");
+            displayMessage("4 - Search Visitor (Card/Name/Time-In)");
+            displayMessage("5 - Delete Visitor Record");
             displayMessage("6 - Exit System");
 
             System.out.print("\nSelect option: ");

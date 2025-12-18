@@ -1,4 +1,4 @@
-package src;
+package visitor;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -7,13 +7,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * ABSTRACT CLASS: src.AbstractVisitorSystem
+ * ABSTRACT CLASS: AbstractVisitorSystem
  * OOP PRINCIPLE: Abstraction & Inheritance
  * DESCRIPTION: Provides the blueprint and shared resources (List, Scanner)
  * for the main system. Contains both abstract methods (to be implemented)
  * and concrete methods (ready to use).
  */
-
 public abstract class AbstractVisitorSystem implements VisitorOperations {
 
     // Shared Resources available to subclasses

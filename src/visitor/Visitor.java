@@ -1,13 +1,12 @@
-package src;
+package visitor;
 
 /**
- * CLASS: src.Visitor
+ * CLASS: Visitor
  * ROLE: Model / Data Object
  * OOP PRINCIPLE: Encapsulation
- * DESCRIPTION: Represents a single visitor entity. Attributes are private
+ * DESCRIPTION: Represents a single src.visitor entity. Attributes are private
  * to ensure data integrity and accessed via Getters/Setters.
  */
-
 public class Visitor {
     // Encapsulation: Private variables hidden from other classes
     private String cardNumber;
@@ -19,10 +18,9 @@ public class Visitor {
     private String timeOut;
 
     /**
-     * CONSTRUCTOR: Initializes a new src.Visitor object.
+     * CONSTRUCTOR: Initializes a new Visitor object.
      * NOTE: timeOut is set to "N/A" by default since they just arrived.
      */
-
     public Visitor(String cardNumber, String name, String department,
                    String purpose, String date, String timeIn) {
         this.cardNumber = cardNumber;
@@ -43,7 +41,7 @@ public class Visitor {
     public String getTimeIn() { return timeIn; }
     public String getTimeOut() { return timeOut; }
 
-    // SETTER: Allows updating the Time-Out when visitor leaves
+    // SETTER: Allows updating the Time-Out when src.visitor leaves
     public void setTimeOut(String timeOut) {
         this.timeOut = timeOut;
     }
@@ -57,7 +55,6 @@ public class Visitor {
      * OOP PRINCIPLE: Polymorphism (Method Overriding)
      * DESCRIPTION: Returns a string representation of the object.
      */
-
     @Override
     public String toString() {
         return "[CARD: " + cardNumber + "] " + name + " | visited " + department +
